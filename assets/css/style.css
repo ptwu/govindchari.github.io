@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #ffc550;
+  background: #bababa;
   color: #fff;
 }
 .back-to-top.active {
@@ -792,7 +792,7 @@ section {
   border: 2px solid #fff;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #f3a200;
+  color: #bababa;
   border-color: #bababa;
 }
 .portfolio .portfolio-item {
@@ -836,7 +836,7 @@ section {
   transition: 0.3s;
 }
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #ffc041;
+  color: #bababa;
 }
 .portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
@@ -980,7 +980,7 @@ section {
   transition: 0.3s;
 }
 .pricing .btn-buy:hover {
-  background: #ffc85a;
+  background: #bababa;
 }
 .pricing .featured h3 {
   color: #fff;
@@ -1119,7 +1119,7 @@ section {
   border-radius: 5px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffc85a;
+  background: #bababa;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1195,7 +1195,7 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #f3a200;
+  background: #bababa;
   color: #fff;
   text-decoration: none;
 }
