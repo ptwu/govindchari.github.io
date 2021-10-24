@@ -244,6 +244,14 @@ h1, h2, h3, h4, h5, h6 {
   color: white !important;
 }
 
+.youtube:hover {
+  color: white !important;
+}
+
+.linkedin {
+  margin-right: 0.5em;
+}
+
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #bababa;
 }
