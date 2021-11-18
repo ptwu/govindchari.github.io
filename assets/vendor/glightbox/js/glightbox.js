@@ -2280,19 +2280,19 @@
           console.log(slideConfig.title);  
           switch (slideConfig.title) {
             case "GFOLD Recreation":
-              slideTitle.innerHTML = '<h3>GFOLD Recreation</h3> <p style="color: #575757">typo</p>';
+              slideTitle.innerHTML = '<center><h4>GFOLD Recreation</h4><\center> <p style="color: #575757">typo</p>';
               break;
             case "3DOF VTOL Simulation":
-              slideTitle.innerHTML = '<h3>3DOF VTOL Simulation</h3> <p style="color: #575757">govind</p>';
+              slideTitle.innerHTML = '<center><h3>3DOF VTOL Simulation</h3><\center> <p style="color: #575757">govind</p>';
               break;
             case "VTOL Rocket":
-                slideTitle.innerHTML = '<h3>VTOL Rocket</h3> <p style="color: #575757">govind</p>';
+                slideTitle.innerHTML = '<center><h3>VTOL Rocket</h3><\center> <p style="color: #575757">govind</p>';
               break;
             case "TVC Model Rocket Simulation":
-                slideTitle.innerHTML = '<h3>TVC Model Rocket Simulation</h3> <p style="color: #575757">govind</p>';
+                slideTitle.innerHTML = '<center><h3>TVC Model Rocket Simulation</h3><\center> <p style="color: #575757">govind</p>';
               break;
             case "Propulsion Projects":
-                slideTitle.innerHTML = '<h3>3DOF Propulsion Projects</h3> <p style="color: #575757">govind</p>';
+                slideTitle.innerHTML = '<center><h3>3DOF Propulsion Projects</h3><\center> <p style="color: #575757">govind</p>';
               break;
             default:
               console.log("yikes");
