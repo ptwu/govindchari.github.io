@@ -2277,7 +2277,17 @@
           } else {
             slideText.parentNode.removeChild(slideText);
           }
-
+          console.log(slideConfig.title);  
+          switch (slideConfig.title) {
+            case "GFOLD Recreation":
+              slideTitle.innerHTML = '<h3>GFOLD Recreation</h3> <p style="color: #575757">typo</p>';
+              break;
+            case "3DOF VTOL Simulation":
+              slideTitle.innerHTML = '<h3>3DOF VTOL Simulation</h3> <p style="color: #575757">govind</p>';
+              break;
+            default:
+              console.log("yikes");
+          }
           addClass(slideMedia.parentNode, "desc-".concat(position));
           addClass(slideDesc.parentNode, "description-".concat(position));
         }
@@ -2398,7 +2408,6 @@
                   removeClass(body, 'gdesc-open');
                   addClass(body, 'gdesc-closed');
                   desc.innerHTML = data.smallDescription;
-
                   _this2.descriptionEvents(desc, data);
 
                   setTimeout(function () {
