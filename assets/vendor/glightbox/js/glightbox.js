@@ -2292,7 +2292,7 @@
                 slideTitle.innerHTML = '<center><h3>TVC Model Rocket Simulation</h3><\center> <p style="color: #575757">govind</p>';
               break;
             case "Propulsion Projects":
-                slideTitle.innerHTML = '<center><h3>3DOF Propulsion Projects</h3><\center> <p style="color: #575757">govind</p>';
+                slideTitle.innerHTML = '<center><h3>Propulsion Projects</h3><\center> <p style="color: #575757">govind</p>';
               break;
             default:
               console.log("yikes");
