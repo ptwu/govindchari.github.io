@@ -1,3 +1,3 @@
 git add .
-git commit -m "Fast push"
+git commit -m "Fast Push"
 git push
