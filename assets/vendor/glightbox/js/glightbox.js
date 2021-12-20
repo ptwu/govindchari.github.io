@@ -2280,16 +2280,19 @@
           console.log(slideConfig.title);  
           switch (slideConfig.title) {
             case "GFOLD Recreation":
-              slideTitle.innerHTML = '<center><h4>GFOLD Recreation</h4><\center> <p style="color: #575757">typo</p>';
+              slideTitle.innerHTML = '<center><h3>GFOLD Recreation</h3><\center> <p style="color: #575757">For my final project for ECE 5555: Stochastic Estimation and Control, I recreated the G-FOLD powered descent guidance algorithm in simulation. You can find my report <a href="assets/ECE5555 Final Paper.pdf" download="How-to-download-file.pdf"> here</p>';
+              break;
+            case "Rocket UKF":
+                slideTitle.innerHTML = '<center><h3>Rocket UKF</h3><\center> <p style="color: #575757">For my final project for MAE 6760: Model-Based Estimation, I wrote a 6DOF physics simulation for a high powered rocket and an Unscented Kalman Filter for position, velocity, and attitude estimation, using an accelerometer, gyroscope, and GPS. You can find my report <a href="assets/MAE_6760_Final_Report.pdf" download="How-to-download-file.pdf"> here</p>';
               break;
             case "3DOF VTOL Simulation":
-              slideTitle.innerHTML = '<center><h3>3DOF VTOL Simulation</h3><\center> <p style="color: #575757">govind</p>';
+              slideTitle.innerHTML = '<center><h3>3DOF VTOL Simulation</h3><\center> <p style="color: #575757">For my final project for MAE 4780: Feedback Controls, I crated a 3DOF simulation for a thrust vectoring VTOL Rocket in Simulink and designed a full-state feedback controller and Extended Kalman Filter for control and estimation. You can find my report <a href="assets/Final Report.pdf" download="How-to-download-file.pdf"> here </p>';
               break;
             case "VTOL Rocket":
                 slideTitle.innerHTML = '<center><h3>VTOL Rocket</h3><\center> <p style="color: #575757">govind</p>';
               break;
             case "TVC Model Rocket Simulation":
-                slideTitle.innerHTML = '<center><h3>TVC Model Rocket Simulation</h3><\center> <p style="color: #575757">govind</p>';
+                slideTitle.innerHTML = '<center><h3>TVC Model Rocket Simulation</h3><\center> <p style="color: #575757">I made a 6DOF simulation in Simulink for a Thrust Vectoring Model Rocket. This simulation accounted for TVC misalignment, actuator lag, saturation, and other non-ideal effects. I then dispersed the misalignments and other parameters to run Monte-Carlo. My code can be found <a href="https://github.com/govindchari/6DOF-Model-Rocket-Simulation">here</a></p>';
               break;
             case "Propulsion Projects":
                 slideTitle.innerHTML = '<center><h3>Propulsion Projects</h3><\center> <p style="color: #575757">govind</p>';
