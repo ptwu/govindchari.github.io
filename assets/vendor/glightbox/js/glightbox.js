@@ -2280,25 +2280,25 @@
           console.log(slideConfig.title);  
           switch (slideConfig.title) {
             case "GFOLD Recreation":
-              slideTitle.innerHTML = '<center><h3>GFOLD Recreation</h3><\center> <p style="color: #575757">For my final project for ECE 5555: Stochastic Estimation and Control, I recreated the G-FOLD powered descent guidance algorithm in simulation. You can find my report <a href="assets/ECE5555 Final Paper.pdf" download="How-to-download-file.pdf"> here</p>';
+              slideTitle.innerHTML = '<center><h3>GFOLD Recreation</h3></center> <p style="color: #575757">For my final project for ECE 5555: Stochastic Estimation and Control, I recreated the G-FOLD powered descent guidance algorithm in simulation. You can find my report <a href="assets/ECE5555 Final Paper.pdf" download="How-to-download-file.pdf"> here</p>';
               break;
             case "Rocket UKF":
-                slideTitle.innerHTML = '<center><h3>Rocket UKF</h3><\center> <p style="color: #575757">For my final project for MAE 6760: Model-Based Estimation, I wrote a 6DOF physics simulation for a high powered rocket and an Unscented Kalman Filter for position, velocity, and attitude estimation, using an accelerometer, gyroscope, and GPS. You can find my report <a href="assets/MAE_6760_Final_Report.pdf" download="How-to-download-file.pdf"> here</p>';
+                slideTitle.innerHTML = '<center><h3>Rocket UKF</h3></center> <p style="color: #575757">For my final project for MAE 6760: Model-Based Estimation, I wrote a 6DOF physics simulation for a high powered rocket and an Unscented Kalman Filter for position, velocity, and attitude estimation, using an accelerometer, gyroscope, and GPS. You can find my report <a href="assets/MAE_6760_Final_Report.pdf" download="How-to-download-file.pdf"> here</p>';
               break;
             case "ADCS Guide":
                 slideTitle.innerHTML = '<p style="color: #575757"> For my senior design, I wrote a guide that steps the reader through the ADCS design, analysis, and verification workflow. You can find my report <a href="assets/Govind_Chari_Senior_Design.pdf" download="How-to-download-file.pdf"> here</p>';
             break;
             case "3DOF VTOL Simulation":
-              slideTitle.innerHTML = '<center><h3>3DOF VTOL Simulation</h3><\center> <p style="color: #575757">For my final project for MAE 4780: Feedback Controls, I crated a 3DOF simulation for a thrust vectoring VTOL Rocket in Simulink and designed a full-state feedback controller and Extended Kalman Filter for control and estimation. You can find my report <a href="assets/Final Report.pdf" download="How-to-download-file.pdf"> here </p>';
+              slideTitle.innerHTML = '<center><h3>3DOF VTOL Simulation</h3></center> <p style="color: #575757">For my final project for MAE 4780: Feedback Controls, I crated a 3DOF simulation for a thrust vectoring VTOL Rocket in Simulink and designed a full-state feedback controller and Extended Kalman Filter for control and estimation. You can find my report <a href="assets/Final Report.pdf" download="How-to-download-file.pdf"> here </p>';
               break;
             case "VTOL Rocket":
-                slideTitle.innerHTML = '<center><h3>VTOL Rocket</h3><\center> <p style="color: #575757">govind</p>';
+                slideTitle.innerHTML = '<center><h3>VTOL Rocket</h3></center> <p style="color: #575757">I designed, built, and tested a vertical takeoff and landing electric rocket. This rocket was powered by counter-rotating racing drone motors and controlled using servo-driven thrust vectoring fins. A more in-depth explanation and more videos can be found at <a href="https://govindchari1.wixsite.com/portfolio/vtol-rocket">here</a></p>';
               break;
             case "TVC Model Rocket Simulation":
-                slideTitle.innerHTML = '<center><h3>TVC Model Rocket Simulation</h3><\center> <p style="color: #575757">I made a 6DOF simulation in Simulink for a Thrust Vectoring Model Rocket. This simulation accounted for TVC misalignment, actuator lag, saturation, and other non-ideal effects. I then dispersed the misalignments and other parameters to run Monte-Carlo. My code can be found <a href="https://github.com/govindchari/6DOF-Model-Rocket-Simulation">here</a></p>';
+                slideTitle.innerHTML = '<center><h3>TVC Model Rocket Simulation</h3></center> <p style="color: #575757">I made a 6DOF simulation in Simulink for a Thrust Vectoring Model Rocket. This simulation accounted for TVC misalignment, actuator lag, saturation, and other non-ideal effects. I then dispersed the misalignments and other parameters to run Monte-Carlo. My code can be found <a href="https://github.com/govindchari/6DOF-Model-Rocket-Simulation">here</a></p>';
               break;
             case "Propulsion Projects":
-                slideTitle.innerHTML = '<center><h3>Propulsion Projects</h3><\center> <p style="color: #575757">govind</p>';
+                slideTitle.innerHTML = '<center><h3>Propulsion Projects</h3></center> <p style="color: #575757">I wrote a MATLAB script to design a supersonic rocket nozzle using the method of characteristics. I also wrote another MATLAB script that outputted the pressure and thrust curves of a solid motor given propellant chemistry and grain geometry. The math behind this model can be found <a href="assets/Solid_Propellant_Combustion_Model.pdf" download="How-to-download-file.pdf"> here</a>. All this work culminated in a 56-page guide I wrote on the basics of compressible flow and nozzle design which can be found <a href="assets/Propulsion Handbook.pdf" download="How-to-download-file.pdf"> here</a>.</p>';
               break;
             default:
               console.log("yikes");
