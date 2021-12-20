@@ -2285,6 +2285,9 @@
             case "Rocket UKF":
                 slideTitle.innerHTML = '<center><h3>Rocket UKF</h3><\center> <p style="color: #575757">For my final project for MAE 6760: Model-Based Estimation, I wrote a 6DOF physics simulation for a high powered rocket and an Unscented Kalman Filter for position, velocity, and attitude estimation, using an accelerometer, gyroscope, and GPS. You can find my report <a href="assets/MAE_6760_Final_Report.pdf" download="How-to-download-file.pdf"> here</p>';
               break;
+            case "ADCS Guide":
+                slideTitle.innerHTML = '<p style="color: #575757"> For my senior design, I wrote a guide that steps the reader through the ADCS design, analysis, and verification workflow. You can find my report <a href="assets/Govind_Chari_Senior_Design.pdf" download="How-to-download-file.pdf"> here</p>';
+            break;
             case "3DOF VTOL Simulation":
               slideTitle.innerHTML = '<center><h3>3DOF VTOL Simulation</h3><\center> <p style="color: #575757">For my final project for MAE 4780: Feedback Controls, I crated a 3DOF simulation for a thrust vectoring VTOL Rocket in Simulink and designed a full-state feedback controller and Extended Kalman Filter for control and estimation. You can find my report <a href="assets/Final Report.pdf" download="How-to-download-file.pdf"> here </p>';
               break;
