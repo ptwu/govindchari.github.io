@@ -2283,7 +2283,7 @@
               slideTitle.innerHTML = '<center><h3>GFOLD Recreation</h3></center> <p style="color: #575757">For my final project for ECE 5555: Stochastic Estimation and Control, I recreated the G-FOLD powered descent guidance algorithm in simulation. You can find my report <a href="assets/ECE5555 Final Paper.pdf" download="ECE5555 Final Paper.pdf"> here</p>';
               break;
             case "Rocket UKF":
-                slideTitle.innerHTML = '<center><h3>Rocket UKF</h3></center> <p style="color: #575757">For my final project for MAE 6760: Model-Based Estimation, I wrote a 6DOF physics simulation for a high powered rocket and an Unscented Kalman Filter for position, velocity, and attitude estimation, using an accelerometer, gyroscope, and GPS. You can find my report <a href="assets/MAE_6760_Final_Report.pdf" download="How-to-download-file.pdf"> here</p>';
+                slideTitle.innerHTML = '<center><h3>Rocket UKF</h3></center> <p style="color: #575757">For my final project for MAE 6760: Model-Based Estimation, I wrote a 6DOF physics simulation for a high powered rocket and an Unscented Kalman Filter for position, velocity, and attitude estimation, using an accelerometer, gyroscope, and GPS. You can find my report <a href="assets/MAE_6760_Final_Report.pdf" download="MAE_6760_Final_Report.pdf"> here</p>';
               break;
             case "ADCS Guide":
                 slideTitle.innerHTML = '<p style="color: #575757"> For my senior design, I wrote a guide that steps the reader through the ADCS design, analysis, and verification workflow. You can find my report <a href="assets/Govind_Chari_Senior_Design.pdf" download="Govind_Chari_Senior_Design.pdf"> here</p>';
