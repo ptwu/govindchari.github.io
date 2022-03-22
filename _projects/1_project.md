@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: QPSolver
+description: QPSolver is a quadratic program solver implemented in C++ based on Mehrotra's predictor-corrector algorithm. 
 img: assets/img/12.jpg
 importance: 1
 category: work
