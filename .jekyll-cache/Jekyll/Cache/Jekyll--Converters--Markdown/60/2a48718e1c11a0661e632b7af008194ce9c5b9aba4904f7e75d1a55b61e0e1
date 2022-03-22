@@ -1,4 +1,4 @@
-I"Î"<!-- _pages/publications.md -->
+I"Å"<!-- _pages/publications.md -->
 <div class="publications">
   <h2 class="year">1956</h2>
   <ol class="bibliography"><li><!-- _layouts/bib.html -->
@@ -108,7 +108,7 @@
           <div class="links">
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777" class="btn btn-sm z-depth-0" role="button">HTML</a>
-            <a href="/al-folio/assets/pdf/example_pdf.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="/assets/pdf/example_pdf.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
 
           <!-- Hidden abstract block -->
