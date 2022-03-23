@@ -3,7 +3,7 @@ layout: page
 title: Rocket UKF
 description: A 6DOF simulation and UKF for high powered rocket state estimation
 img: assets/img/FBD.png
-importance: 3
+importance: 4
 category: fun
 ---
 

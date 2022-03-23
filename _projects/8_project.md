@@ -1,9 +1,9 @@
 ---
 layout: page
-title: TVC Model Rocket Sim
-description: A simulation for TVC model rockets written in Simulink
-img: assets/img/Model Rocket Monte Carlo.jpg
-importance: 5
+title: Propulsion Projects
+description: Includes a combustion model, nozzle design script, and propulsion guide
+img: assets/img/pressure and thrust vs time.jpg
+importance: 8
 category: fun
 ---
 

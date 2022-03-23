@@ -1,9 +1,9 @@
 ---
 layout: page
-title: TVC Model Rocket Sim
-description: A simulation for TVC model rockets written in Simulink
-img: assets/img/Model Rocket Monte Carlo.jpg
-importance: 5
+title: CubeSat ADCS Guide
+description: A guide I wrote on CubeSat ADCS design, analysis, and verification.
+img: assets/img/ADCS.png
+importance: 7
 category: fun
 ---
 
