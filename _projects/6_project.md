@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 3DOF VTOL Sim
-description: a project with no image
+description: A 3DOF VTOL rocket simulation with full-state feedback controller and EKF written in Simulink
 img: assets/img/3DOF Model Rocket.png
 importance: 4
 category: fun
