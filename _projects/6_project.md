@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 6
+title: 3DOF VTOL Sim
 description: a project with no image
-img:
+img: assets/img/3DOF Model Rocket.png
 importance: 4
 category: fun
 ---
