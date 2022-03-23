@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Rocket UKF
+description: A 6DOF simulation and UKF for high powered rocket state estimation
+img: assets/img/FBD.png
 importance: 3
 category: fun
 ---
