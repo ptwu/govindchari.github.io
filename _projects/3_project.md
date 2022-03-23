@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: VTOL Rocket
+description: A Vertical Takeoff and Landing rocket I built, coded, and tested
+img: assets/img/VTOL.jpeg
+redirect: https://govindchari1.wixsite.com/portfolio/vtol-rocket
 importance: 3
 category: work
 ---

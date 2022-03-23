@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: G-FOLD
+description: A recreation of JPL's powered descent guidance algorithm. 
+img: assets/img/GFOLD.jpeg
 importance: 2
 category: work
 ---
