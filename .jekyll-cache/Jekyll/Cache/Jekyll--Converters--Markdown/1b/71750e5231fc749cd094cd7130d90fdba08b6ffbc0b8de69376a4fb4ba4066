@@ -1,0 +1,20 @@
+I"Ì<p>For my final project for MAE 4780: Feedback Controls, I created a 3DOF Simulink simulation for a thrust vectoring VTOL Rocket and designed a full-state feedback controller and an Extended Kalman Filter for control and estimation. You can find my code <a href="https://github.com/govindchari/3DOF-TVC-Simulation">here</a> and my report <a href="/assets/pdf/MAE_4780_Final_Report.pdf">here</a>.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/3DOF%20Model%20Rocket-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/3DOF%20Model%20Rocket-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/3DOF%20Model%20Rocket-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/3DOF%20Model%20Rocket.png" title="example image" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+:ET
