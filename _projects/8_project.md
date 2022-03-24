@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Propulsion Projects
-description: Includes a combustion model, nozzle design script, and propulsion guide
+description: Various propulsion projects
 img: assets/img/pressure and thrust vs time.jpg
 importance: 8
 category: fun
