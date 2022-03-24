@@ -1,0 +1,36 @@
+I"Á<p>A 6DOF simulation in Simulink for a Thrust Vectoring Model Rocket. This simulation accounts for TVC misalignment, actuator lag, saturation, and other non-ideal effects. These parameters were dispersed to run a Monte-Carlo simulation. My code can be found <a href="https://github.com/govindchari/6DOF-Model-Rocket-Simulation">here</a>.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/Model%20Rocket%20Monte%20Carlo-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/Model%20Rocket%20Monte%20Carlo-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/Model%20Rocket%20Monte%20Carlo-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/Model%20Rocket%20Monte%20Carlo.jpg" title="example image" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/Block%20Diagram-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/Block%20Diagram-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/Block%20Diagram-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/Block%20Diagram.png" title="example image" />
+
+  </picture>
+
+</figure>
+
+    </div>
+
+</div>
+:ET
