@@ -1,0 +1,36 @@
+I"<<p>For my final project in ECE 5555: Stochastic Control and Estimation, I recreated Behçet Açıkmeşe and Lars Blackmore’s G-FOLD algorithm in a C++ simulation. You can find my code <a href="https://github.com/govindchari/nsim">here</a> and my report <a href="../assets/pdf/Govind_Chari_Resume.pdf">here</a></p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/GFOLD-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/GFOLD-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/GFOLD-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/GFOLD.jpeg" title="example image" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/Monte%20Carlo-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/Monte%20Carlo-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/Monte%20Carlo-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/Monte%20Carlo.png" title="example image" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+:ET
