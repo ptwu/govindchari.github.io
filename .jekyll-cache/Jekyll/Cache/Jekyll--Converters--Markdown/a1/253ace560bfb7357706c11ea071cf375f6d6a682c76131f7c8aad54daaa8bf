@@ -1,0 +1,35 @@
+I"‹<p>I wrote a MATLAB script to design a supersonic rocket nozzle using the method of characteristics. I also wrote another script to output the pressure and thrust curves of a solid propellant motor given propellant chemistry and grain geometry. The math behind this model can be found <a href="/assets/pdf/Solid_Propellant_Combustion_Model.pdf">here</a>. All this work culminated in a 56-page guide I wrote on the basics of compressible flow and nozzle design which can be found <a href="/assets/pdf/Propulsion%20Handbook.pdf">here</a>.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/pressure%20and%20thrust%20vs%20time-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/pressure%20and%20thrust%20vs%20time-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/pressure%20and%20thrust%20vs%20time-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/pressure%20and%20thrust%20vs%20time.jpg" title="example image" />
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/moc%20model-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/moc%20model-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/moc%20model-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/moc%20model.png" title="example image" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+:ET
