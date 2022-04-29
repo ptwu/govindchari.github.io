@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Optimal Rendezvous
-description: Spacecraft rendezvous using convex optimization. Part of final presentation for MAE 6720 - Advanced Astrodynamics.
+description: Fuel optimal spacecraft rendezvous using convex optimization. 
 img: assets/img/rendezvous.png
 importance: 4
 category: work
