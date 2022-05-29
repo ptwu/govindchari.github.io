@@ -78,31 +78,6 @@
 </div><!-- _includes/projects.html -->
 <div class="grid-sizer"></div>
 <div class="grid-item">
-  <a href="/projects/9_project/">
-      <div class="card hoverable"><figure>
-
-  <picture>
-    <source media="(max-width: 480px)" srcset="/assets/img/rendezvous-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/rendezvous-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/rendezvous-1400.webp" />
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/rendezvous.png" alt="project thumbnail" />
-
-  </picture>
-
-</figure>
-
-        <div class="card-body">
-          <h2 class="card-title">Optimal Rendezvous</h2>
-          <p class="card-text">Fuel optimal spacecraft rendezvous using convex optimization.</p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div><!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
   <a href="/projects/4_project/">
       <div class="card hoverable"><figure>
 
@@ -120,6 +95,31 @@
         <div class="card-body">
           <h2 class="card-title">Rocket UKF</h2>
           <p class="card-text">A 6DOF simulation and UKF for high powered rocket state estimation</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div><!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/9_project/">
+      <div class="card hoverable"><figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/rendezvous-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/rendezvous-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/rendezvous-1400.webp" />
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/rendezvous.png" alt="project thumbnail" />
+
+  </picture>
+
+</figure>
+
+        <div class="card-body">
+          <h2 class="card-title">Optimal Rendezvous</h2>
+          <p class="card-text">Fuel optimal spacecraft rendezvous using convex optimization.</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>

@@ -14,7 +14,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a senior mechanical engineering student at Cornell University. I interned at SpaceX
-last summer in the Propulsion Analysis group, and this summer I will be returning to SpaceX where I will be interning in the Guidance, Navigation, and Controls group for the Dragon spacecraft. In the fall, I will be starting my PhD in the [Autonomous Controls Lab](https://depts.washington.edu/uwacl/) at the University of Washington advised by Professor [Behçet Açikmeşe](https://www.aa.washington.edu/facultyfinder/behcet-acikmese). My resume can be found [here](../assets/pdf/Govind_Chari_Resume.pdf).
+I recently graduated *summa cum laude* from Cornell University in three years with a BS in Mechanical Engineering, and am currently interning at SpaceX in the Guidance, Navigation, and Controls group for the Dragon spacecraft. 
 
-I am interested in trajectory optimization, numerical optimization, numeric methods, developing simulations, and writing performance software.
+In the fall, I will be starting my PhD in the [Autonomous Controls Lab](https://depts.washington.edu/uwacl/) at the University of Washington advised by Professor [Behçet Açikmeşe](https://www.aa.washington.edu/facultyfinder/behcet-acikmese).
+
+I am interested in trajectory optimization, numerical optimization, numeric methods, developing simulations, and writing performance software. My resume can be found [here](../assets/pdf/Govind_Chari_Resume.pdf).
