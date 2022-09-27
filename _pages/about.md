@@ -17,4 +17,4 @@ I am a PhD student in the [Autonomous Controls Lab](https://depts.washington.edu
 
 I graduated *summa cum laude* from Cornell University in three years with a BS in Mechanical Engineering. I also recieved the Sibley Prize, which is awarded to the graduating MechE senior with the highest cumulative GPA.
 
-I have completed two internships at SpaceX: Propulsion Analysis for Raptor and Guidance, Navigation, and Controls for Dragon. My resume can be found [here](../assets/pdf/Govind_Chari_Resume.pdf).
+I have completed two internships at SpaceX: Propulsion Analysis for Raptor and Guidance, Navigation, and Controls for [Dragon](https://www.spacex.com/vehicles/dragon/). My resume can be found [here](../assets/pdf/Govind_Chari_Resume.pdf).
