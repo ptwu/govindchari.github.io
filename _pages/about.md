@@ -2,21 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
   address: >
+    <p>555 your office number</p>
+    <p>123 your address street</p>
+    <p>Your City, State 12345</p>
 
-news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
+news: true  # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am a PhD student in the [Autonomous Controls Lab](https://depts.washington.edu/uwacl/) at the University of Washington advised by Professor [Behçet Açikmeşe](https://www.aa.washington.edu/facultyfinder/behcet-acikmese). My interests are high-speed optimization and its applications, especially online trajectory optimization. 
 
-I graduated *summa cum laude* from Cornell University in three years with a BS in Mechanical Engineering. I also recieved the Sibley Prize, which is awarded to the graduating MechE senior with the highest cumulative GPA.
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-For the summer of 2023 I will be interning at [X, The Moonshot Factory](https://x.company/) (formerly GoogleX), where I will be working on robotic motion-planning and control.
+Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Previously, I have completed two internships at SpaceX: Propulsion Analysis for [Raptor](https://www.youtube.com/watch?v=k0t6_l3x-f8) and Guidance, Navigation, and Controls for [Dragon](https://www.spacex.com/vehicles/dragon/). My resume can be found [here](../assets/pdf/Govind_Chari_Resume.pdf).
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.

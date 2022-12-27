@@ -1,9 +1,9 @@
 ---
 layout: page
-title: VTOL Rocket
-description: A Vertical Takeoff and Landing rocket I built, coded, and tested
-img: assets/img/VTOL.jpeg
-redirect: https://govindchari1.wixsite.com/portfolio/vtol-rocket
+title: project 3
+description: a project that redirects to another website
+img: assets/img/7.jpg
+redirect: https://unsplash.com
 importance: 3
 category: work
 ---
@@ -46,7 +46,7 @@ To give your project a background in the portfolio page, just add the img tag to
 
 You can also put regular text between your rows of images.
 Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
 
 
 <div class="row justify-content-sm-center">
