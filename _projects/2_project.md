@@ -6,7 +6,7 @@ img: assets/img/GFOLD.jpeg
 importance: 2
 category: Undergrad
 ---
-For my final project in ECE 5555: Stochastic Control and Estimation, I recreated Behçet Açıkmeşe and Lars Blackmore's G-FOLD algorithm in a C++ simulation. You can find my code [here](https://github.com/govindchari/nsim) and my report [here](/assets/pdf/ECE5555 Final Paper.pdf).
+For my final project in ECE 5555: Stochastic Control and Estimation, I recreated Behçet Açıkmeşe and Lars Blackmore's [G-FOLD](/assets/pdf/gfold_paper.pdf) algorithm in a C++ simulation. You can find my code [here](https://github.com/govindchari/nsim) and my report [here](/assets/pdf/ECE5555 Final Paper.pdf).
 
 
 <div class="row">

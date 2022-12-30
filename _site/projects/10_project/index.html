@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>G-FOLD | Govind  Chari</title>
+    <title>PTR | Govind  Chari</title>
     <meta name="author" content="Govind  Chari">
-    <meta name="description" content="A recreation of JPL's powered descent guidance algorithm.">
+    <meta name="description" content="Penalized Trust Region algorithm for minimum time-of-flight 6DOF powered descent guidance.">
     <meta name="keywords" content="gnc, optimization, phd">
 
 
@@ -33,7 +33,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/projects/2_project/">
+    <link rel="canonical" href="http://localhost:4000/projects/10_project/">
     
     <!-- Dark Mode -->
     
@@ -104,12 +104,12 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">G-FOLD</h1>
-            <p class="post-description">A recreation of JPL's powered descent guidance algorithm.</p>
+            <h1 class="post-title">PTR</h1>
+            <p class="post-description">Penalized Trust Region algorithm for minimum time-of-flight 6DOF powered descent guidance.</p>
           </header>
 
           <article>
-            <p>For my final project in ECE 5555: Stochastic Control and Estimation, I recreated Behçet Açıkmeşe and Lars Blackmore’s <a href="/assets/pdf/gfold_paper.pdf">G-FOLD</a> algorithm in a C++ simulation. You can find my code <a href="https://github.com/govindchari/nsim" rel="external nofollow noopener" target="_blank">here</a> and my report <a href="/assets/pdf/ECE5555%20Final%20Paper.pdf">here</a>.</p>
+            <p>A recreation of <a href="https://arxiv.org/pdf/1802.03827.pdf" rel="external nofollow noopener" target="_blank">Successive Convexification for 6-DoF Mars Rocket Powered Landing with Free-Final-Time</a> by Miki Szmuk and Behçet Açikmeşe. The animation on the left is a planar trajectory and the animation on the right is a recreation of SpaceX’s Starship flip maneuver. My code for this project can be found <a href="https://github.com/govindchari/PTR" rel="external nofollow noopener" target="_blank">here</a></p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -117,13 +117,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/GFOLD-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/GFOLD-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/GFOLD-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/planar.gif-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/planar.gif-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/planar.gif-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/GFOLD.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/planar.gif" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -135,13 +135,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/Monte%20Carlo-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/Monte%20Carlo-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/Monte%20Carlo-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/starship.gif-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/starship.gif-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/starship.gif-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/Monte%20Carlo.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/starship.gif" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
