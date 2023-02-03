@@ -4,7 +4,7 @@ title: Convex Solvers
 description: A survey of the different classes of solvers for convex optimization problems
 tags: math
 giscus_comments: false
-date: 2023-01-11
+date: 2023-03-03
 
 authors:
   - name: Govind Chari
@@ -182,9 +182,9 @@ First Order methods on the other hand only use first-order information, which is
 
 First order methods are more or less gradient descent algorithms with some modifications to handle constraints such as projections. For extremely large scale problems first order methods are preferable due to the high cost of factorizing and storing large matrices. However, even for medium sized problems we can gain a lot of performance from first-order methods by customizing the algorithm to the specific problem structure. For a detailed description of customization refer to [\[3\]](/blog/2023/optimization-algorithms/#references). 
 
-All of this performance of first order methods does have some drawbacks. First order methods are extremely sensitive to ill conditioned objectives and badly scaled problem data. Thus an extrememly fast and robust implementation of a first-order method must scale the problem data, precondition the problem, and be customized to the problem structure. Without customization the algorithm will still be very fast (around the same speed as IPMs), but customization allows the full speed of the algorithm to be unlocked. To see some speed results of a particular first order algorithm called PIPG, refer to [\[3,4\]](/blog/2023/optimization-algorithms/#references). These papers have results that show that PIPG is faster than ECOS, SCS, MOSEK, Gurobi, and OSQP once customized, scaled, and preconditioned.
+All of this performance of first order methods does have some drawbacks. First order methods are extremely sensitive to ill conditioned objectives and badly scaled problem data. Thus an extrememly fast and robust implementation of a first-order method must scale the problem data, precondition the problem, and be customized to the problem structure. Without customization the algorithm will still be very fast (around the same speed as IPMs), but customization allows the full speed of the algorithm to be unlocked. To see some speed results of a particular first order algorithm called PIPG, refer to [\[3,4\]](/blog/2023/optimization-algorithms/#references). These papers have results that show that PIPG is faster than ECOS, SCS, MOSEK, Gurobi, and OSQP once customized, and preconditioned.
 
-Some examples of first order solvers are [OSQP](https://osqp.org/) and [SCS](https://github.com/cvxgrp/scs).
+Some examples of first order solvers are [OSQP](https://osqp.org/), [SCS](https://github.com/cvxgrp/scs), and [PIPG]().
 
 ## Summary
 
@@ -214,7 +214,7 @@ Disadvantages: Highly sensitive to scaling and conditioning so they need scaling
 
 [2] *J. Mattingley and S. Boyd. CVXGEN: A Code Generator for Embedded Convex Optimization. Optimization and Engineering, 13(1):1–27, 2012.*
 
-[3] *Kamath, A.G., Elango, P., Yu, Y., Mendeck, G., Carson III, J.M., Mesbahi, M., and Açıkmeşe, B. (2023). Customized real-time first-order methods for onboard dual quaternion-based 6-dof powered-descent guidance. AIAA SciTech 2023 Forum.*
+[3] *Kamath, A.G., Elango, P., Yu, Y., Kim, T., Carson III, J.M., Mesbahi, M., and Açıkmeşe, B. (2023). Customized real-time first-order methods for onboard dual quaternion-based 6-dof powered-descent guidance. AIAA SciTech 2023 Forum.*
 
 [4] *Yu, Y., Elango, P., Açıkmeşe, B., and Topcu, U., “Extrapolated Proportional-Integral Projected Gradient Method for
 Conic Optimization,” arXiv preprint arXiv:2203.04188, 2022.*
