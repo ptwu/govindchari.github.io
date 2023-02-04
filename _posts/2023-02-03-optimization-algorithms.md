@@ -4,7 +4,7 @@ title: Convex Solvers
 description: A survey of the different classes of solvers for convex optimization problems
 tags: math
 giscus_comments: false
-date: 2023-03-03
+date: 2023-02-03
 
 authors:
   - name: Govind Chari
