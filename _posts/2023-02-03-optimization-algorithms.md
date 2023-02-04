@@ -214,7 +214,7 @@ Disadvantages: Highly sensitive to scaling and conditioning so they need scaling
 
 [2] *J. Mattingley and S. Boyd. CVXGEN: A Code Generator for Embedded Convex Optimization. Optimization and Engineering, 13(1):1–27, 2012.*
 
-[3] *Kamath, A.G., Elango, P., Yu, Y., Kim, T., Carson III, J.M., Mesbahi, M., and Açıkmeşe, B. (2023). Customized real-time first-order methods for onboard dual quaternion-based 6-dof powered-descent guidance. AIAA SciTech 2023 Forum.*
+[3] *Kamath, A.G., Elango, P., Kim, T., Mceowen, S., Yu, Y.,, Carson III, J.M., Mesbahi, M., and Açıkmeşe, B. (2023). Customized real-time first-order methods for onboard dual quaternion-based 6-dof powered-descent guidance. AIAA SciTech 2023 Forum.*
 
 [4] *Yu, Y., Elango, P., Açıkmeşe, B., and Topcu, U., “Extrapolated Proportional-Integral Projected Gradient Method for
 Conic Optimization,” arXiv preprint arXiv:2203.04188, 2022.*
