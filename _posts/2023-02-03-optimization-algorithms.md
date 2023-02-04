@@ -12,7 +12,7 @@ authors:
     affiliations:
       name: University of Washington Autonomous Controls Lab
 
-bibliography: 2018-12-22-distill.bib
+bibliography: mybib.bib
 
 # Optionally, you can add a table of contents to your post.
 # NOTES:
@@ -31,24 +31,6 @@ toc:
   - name: First Order Methods
   - name: Summary
   - name: References
-
-# Below is an example of injecting additional post-specific styles.
-# If you use this post as a template, delete this _styles block.
-# _styles: >
-#   .fake-img {
-#     background: #bbb;
-#     border: 1px solid rgba(0, 0, 0, 0.1);
-#     box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-#     margin-bottom: 12px;
-#   }
-#   .fake-img p {
-#     font-family: monospace;
-#     color: white;
-#     text-align: left;
-#     margin: 12px 0;
-#     text-align: center;
-#     font-size: 16px;
-#   }
 
 ---
 
@@ -162,7 +144,7 @@ However, we cannot directly solve the minimization problem with the indicator fu
 
 This steepness is controlled by a "barrier parameter." The steeper the barrier function is, the better it approximates the indicator function, but the less smooth and worse conditioned the minimization becomes. Initially the unconstrained problem is solved with a shallow barrier parameter and then is successively solved with steeper and steeper barrier parameters. This barrier can be thought of as a force-field that pushes the iterates away from the boundary of the feasible set and amount that this force field pushes the iterates is controlled by the barrier paramter.
 
-Primal-Dual IPMs take a slightly different approach. They attempt to use Newton's method on the KKT conditions of the problem with some other fancy tricks such as taking a prediction step then a correction step which allows the algorithm to reuse the factorization of the KKT matrix. This famed trick is called Mehrotra's Predictor-Corrector. The Primal Dual IPM is famously used by SpaceX in their rocket landing algorithm [\[1,2\]](/blog/2023/optimization-algorithms/#references). 
+Primal-Dual IPMs take a slightly different approach. They attempt to use Newton's method on the KKT conditions of the problem with some other fancy tricks such as taking a prediction step then a correction step which allows the algorithm to reuse the factorization of the KKT matrix. This famed trick is called Mehrotra's Predictor-Corrector. The Primal Dual IPM is famously used by SpaceX in their rocket landing algorithm <d-cite key="Blackmore2016Autonomous"></d-cite>, <d-cite key="Mattingley2011CVXGEN"></d-cite>.
 
 One large drawback to using IPMs in real-time systems is the fact that they cannot be warmstarted which is a desirable property of real-time solvers.
 
@@ -180,9 +162,9 @@ The number of floating point operations for matrix factorization scales with $\m
 
 First Order methods on the other hand only use first-order information, which is information about the slope of a function which is given by its first derivative, or gradient in the multivariable case. First-order methods do not require matrix factorizations at each iteration and only require Matrix-vector multiplications. The number of floating point operations for matrix-vector multiplication scales with $\mathcal{O}(n^2)$, thus each iteration of a first-order method can be done quicker than an iteration of a second order method, but first order methods require more iterations to converge, since each iteration uses less information.
 
-First order methods are more or less gradient descent algorithms with some modifications to handle constraints such as projections. For extremely large scale problems first order methods are preferable due to the high cost of factorizing and storing large matrices. However, even for medium sized problems we can gain a lot of performance from first-order methods by customizing the algorithm to the specific problem structure. For a detailed description of customization refer to [\[3\]](/blog/2023/optimization-algorithms/#references). 
+First order methods are more or less gradient descent algorithms with some modifications to handle constraints such as projections. For extremely large scale problems first order methods are preferable due to the high cost of factorizing and storing large matrices. However, even for medium sized problems we can gain a lot of performance from first-order methods by customizing the algorithm to the specific problem structure. For a detailed description of customization refer to <d-cite key="Kamath2023Customized"></d-cite>.
 
-All of this performance of first order methods does have some drawbacks. First order methods are extremely sensitive to ill conditioned objectives and badly scaled problem data. Thus an extrememly fast and robust implementation of a first-order method must scale the problem data, precondition the problem, and be customized to the problem structure. Without customization the algorithm will still be very fast (around the same speed as IPMs), but customization allows the full speed of the algorithm to be unlocked. To see some speed results of a particular first order algorithm called PIPG, refer to [\[3,4\]](/blog/2023/optimization-algorithms/#references). These papers have results that show that PIPG is faster than ECOS, SCS, MOSEK, Gurobi, and OSQP once customized and preconditioned.
+All of this performance of first order methods does have some drawbacks. First order methods are extremely sensitive to ill conditioned objectives and badly scaled problem data. Thus an extrememly fast and robust implementation of a first-order method must scale the problem data, precondition the problem, and be customized to the problem structure. Without customization the algorithm will still be very fast (around the same speed as IPMs), but customization allows the full speed of the algorithm to be unlocked. To see some speed results of a particular first order algorithm called PIPG, refer to <d-cite key="Kamath2023Customized"></d-cite>, <d-cite key="Yu2022Extrapolated"></d-cite>. These papers have results that show that PIPG is faster than ECOS, SCS, MOSEK, Gurobi, and OSQP once customized and preconditioned.
 
 Some examples of first order solvers are [OSQP](https://osqp.org/), [SCS](https://github.com/cvxgrp/scs), and PIPG.
 
@@ -207,16 +189,5 @@ Disadvantages: Bad for large problems, cannot warmstart, large code footprint
 Advantages: Small code footprint, good for large problems, can be good for medium sized problems with customization, ease of customization, easy to warmstart
 
 Disadvantages: Highly sensitive to scaling and conditioning so they need scaling and preconditioning
-
-## References
-
-[1] *Blackmore, L. (2016). Autonomous precision landing of space rockets. In Frontiers of Engineering: Reports on Leading-Edge Engineering from the 2016 Symposium volume 46, 15–20*
-
-[2] *J. Mattingley and S. Boyd. CVXGEN: A Code Generator for Embedded Convex Optimization. Optimization and Engineering, 13(1):1–27, 2012.*
-
-[3] *Kamath, A.G., Elango, P., Kim, T., Mceowen, S., Yu, Y.,, Carson III, J.M., Mesbahi, M., and Açıkmeşe, B. (2023). Customized real-time first-order methods for onboard dual quaternion-based 6-dof powered-descent guidance. AIAA SciTech 2023 Forum.*
-
-[4] *Yu, Y., Elango, P., Açıkmeşe, B., and Topcu, U., “Extrapolated Proportional-Integral Projected Gradient Method for
-Conic Optimization,” arXiv preprint arXiv:2203.04188, 2022.*
 
 ***

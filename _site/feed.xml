@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-02-03T16:10:37-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-02-04T15:23:01-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">Convex Solvers</title><link href="http://localhost:4000/blog/2023/optimization-algorithms/" rel="alternate" type="text/html" title="Convex Solvers" /><published>2023-02-03T00:00:00-08:00</published><updated>2023-02-03T00:00:00-08:00</updated><id>http://localhost:4000/blog/2023/optimization-algorithms</id><content type="html" xml:base="http://localhost:4000/blog/2023/optimization-algorithms/"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <p>Convex optimization is a class of optimization concerned with minimizing a convex function over a convex set. 
@@ -29,7 +29,7 @@ constraints, and $g_{i}(x) \leq 0$ are convex inequality constraints.</p>
 
 <p>One famous example of an active set algorithm is Simplex, which was invented by George Dantzig for Linear Programs (LPs). In Simplex, all iterates are vertices of the feasible set (which is a polytope), however this is not the case for quadratic programs (QPs) or any more complex optimization problem. Another active set solver is <a href="https://github.com/coin-or/qpOASES">qpOASES</a>.</p>
 
-<p>Now we will see how equality constrained QPs can be solved in a simple way. For equality constrained QPs, the KKT conditions which are necessary and sufficient conditions for optimality are linear and thus they can be solved in one Newton step. We can write the equality constrained QP as follows where $Q&gt;0$.</p>
+<p>Each iteration of an active set method for QPs solves an equality constrained QP. Now we will see how equality constrained QPs can be solved in a simple way. For equality constrained QPs, the KKT conditions which are necessary and sufficient conditions for optimality are linear and thus they can be solved in one Newton step. We can write the equality constrained QP as follows where $Q&gt;0$.</p>
 
 \[\begin{align*}
 \min_{x} &amp; \; \frac{1}{2}x^\top Qx + q^\top x \\
@@ -96,7 +96,7 @@ b
 
 <p>This steepness is controlled by a “barrier parameter.” The steeper the barrier function is, the better it approximates the indicator function, but the less smooth and worse conditioned the minimization becomes. Initially the unconstrained problem is solved with a shallow barrier parameter and then is successively solved with steeper and steeper barrier parameters. This barrier can be thought of as a force-field that pushes the iterates away from the boundary of the feasible set and amount that this force field pushes the iterates is controlled by the barrier paramter.</p>
 
-<p>Primal-Dual IPMs take a slightly different approach. They attempt to use Newton’s method on the KKT conditions of the problem with some other fancy tricks such as taking a prediction step then a correction step which allows the algorithm to reuse the factorization of the KKT matrix. This famed trick is called Mehrotra’s Predictor-Corrector. The Primal Dual IPM is famously used by SpaceX in their rocket landing algorithm <a href="/blog/2023/optimization-algorithms/#references">[1,2]</a>.</p>
+<p>Primal-Dual IPMs take a slightly different approach. They attempt to use Newton’s method on the KKT conditions of the problem with some other fancy tricks such as taking a prediction step then a correction step which allows the algorithm to reuse the factorization of the KKT matrix. This famed trick is called Mehrotra’s Predictor-Corrector. The Primal Dual IPM is famously used by SpaceX in their rocket landing algorithm <d-cite key="Blackmore2016Autonomous"></d-cite>, <d-cite key="Mattingley2011CVXGEN"></d-cite>.</p>
 
 <p>One large drawback to using IPMs in real-time systems is the fact that they cannot be warmstarted which is a desirable property of real-time solvers.</p>
 
@@ -114,11 +114,11 @@ b
 
 <p>First Order methods on the other hand only use first-order information, which is information about the slope of a function which is given by its first derivative, or gradient in the multivariable case. First-order methods do not require matrix factorizations at each iteration and only require Matrix-vector multiplications. The number of floating point operations for matrix-vector multiplication scales with $\mathcal{O}(n^2)$, thus each iteration of a first-order method can be done quicker than an iteration of a second order method, but first order methods require more iterations to converge, since each iteration uses less information.</p>
 
-<p>First order methods are more or less gradient descent algorithms with some modifications to handle constraints such as projections. For extremely large scale problems first order methods are preferable due to the high cost of factorizing and storing large matrices. However, even for medium sized problems we can gain a lot of performance from first-order methods by customizing the algorithm to the specific problem structure. For a detailed description of customization refer to <a href="/blog/2023/optimization-algorithms/#references">[3]</a>.</p>
+<p>First order methods are more or less gradient descent algorithms with some modifications to handle constraints such as projections. For extremely large scale problems first order methods are preferable due to the high cost of factorizing and storing large matrices. However, even for medium sized problems we can gain a lot of performance from first-order methods by customizing the algorithm to the specific problem structure. For a detailed description of customization refer to <d-cite key="Kamath2023Customized"></d-cite>.</p>
 
-<p>All of this performance of first order methods does have some drawbacks. First order methods are extremely sensitive to ill conditioned objectives and badly scaled problem data. Thus an extrememly fast and robust implementation of a first-order method must scale the problem data, precondition the problem, and be customized to the problem structure. Without customization the algorithm will still be very fast (around the same speed as IPMs), but customization allows the full speed of the algorithm to be unlocked. To see some speed results of a particular first order algorithm called PIPG, refer to <a href="/blog/2023/optimization-algorithms/#references">[3,4]</a>. These papers have results that show that PIPG is faster than ECOS, SCS, MOSEK, Gurobi, and OSQP once customized, and preconditioned.</p>
+<p>All of this performance of first order methods does have some drawbacks. First order methods are extremely sensitive to ill conditioned objectives and badly scaled problem data. Thus an extrememly fast and robust implementation of a first-order method must scale the problem data, precondition the problem, and be customized to the problem structure. Without customization the algorithm will still be very fast (around the same speed as IPMs), but customization allows the full speed of the algorithm to be unlocked. To see some speed results of a particular first order algorithm called PIPG, refer to <d-cite key="Kamath2023Customized"></d-cite>, <d-cite key="Yu2022Extrapolated"></d-cite>. These papers have results that show that PIPG is faster than ECOS, SCS, MOSEK, Gurobi, and OSQP once customized and preconditioned.</p>
 
-<p>Some examples of first order solvers are <a href="https://osqp.org/">OSQP</a>, <a href="https://github.com/cvxgrp/scs">SCS</a>, and <a href="">PIPG</a>.</p>
+<p>Some examples of first order solvers are <a href="https://osqp.org/">OSQP</a>, <a href="https://github.com/cvxgrp/scs">SCS</a>, and PIPG.</p>
 
 <h2 id="summary">Summary</h2>
 
@@ -141,16 +141,5 @@ b
 <p>Advantages: Small code footprint, good for large problems, can be good for medium sized problems with customization, ease of customization, easy to warmstart</p>
 
 <p>Disadvantages: Highly sensitive to scaling and conditioning so they need scaling and preconditioning</p>
-
-<h2 id="references">References</h2>
-
-<p>[1] <em>Blackmore, L. (2016). Autonomous precision landing of space rockets. In Frontiers of Engineering: Reports on Leading-Edge Engineering from the 2016 Symposium volume 46, 15–20</em></p>
-
-<p>[2] <em>J. Mattingley and S. Boyd. CVXGEN: A Code Generator for Embedded Convex Optimization. Optimization and Engineering, 13(1):1–27, 2012.</em></p>
-
-<p>[3] <em>Kamath, A.G., Elango, P., Yu, Y., Kim, T., Carson III, J.M., Mesbahi, M., and Açıkmeşe, B. (2023). Customized real-time first-order methods for onboard dual quaternion-based 6-dof powered-descent guidance. AIAA SciTech 2023 Forum.</em></p>
-
-<p>[4] <em>Yu, Y., Elango, P., Açıkmeşe, B., and Topcu, U., “Extrapolated Proportional-Integral Projected Gradient Method for
-Conic Optimization,” arXiv preprint arXiv:2203.04188, 2022.</em></p>
 
 <hr />]]></content><author><name>Govind Chari</name></author><category term="math" /><summary type="html"><![CDATA[A survey of the different classes of solvers for convex optimization problems]]></summary></entry></feed>
