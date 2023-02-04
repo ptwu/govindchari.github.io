@@ -84,7 +84,7 @@ The disadvantage of active set methods is that the theoretical worst-case runtim
 
 One famous example of an active set algorithm is Simplex, which was invented by George Dantzig for Linear Programs (LPs). In Simplex, all iterates are vertices of the feasible set (which is a polytope), however this is not the case for quadratic programs (QPs) or any more complex optimization problem. Another active set solver is [qpOASES](https://github.com/coin-or/qpOASES).
 
-Now we will see how equality constrained QPs can be solved in a simple way. For equality constrained QPs, the KKT conditions which are necessary and sufficient conditions for optimality are linear and thus they can be solved in one Newton step. We can write the equality constrained QP as follows where $Q>0$.
+Each iteration of an active set method for QPs solves an equality constrained QP. Now we will see how equality constrained QPs can be solved in a simple way. For equality constrained QPs, the KKT conditions which are necessary and sufficient conditions for optimality are linear and thus they can be solved in one Newton step. We can write the equality constrained QP as follows where $Q>0$.
 
 $$
 \begin{align*}
